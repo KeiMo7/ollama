@@ -1,0 +1,17 @@
+{
+  "root": "/home/wll/uidreczz28dV9K5jVJk",
+  "B": "/home/wll/uidreczz28dV9K5jVJk",
+  "sha": "924cc286cc592f49c481fa84e15fa60dbc75989e",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "ollama",
+    "repo": "ollama",
+    "sha": "924cc286cc592f49c481fa84e15fa60dbc75989e"
+  },
+  "fork": {
+    "owner": "KeiMo7",
+    "repo": "ollama",
+    "cloneUrl": "https://github.com/KeiMo7/ollama.git"
+  },
+  "at": "2026-11-24T16:37:20.625Z"
+}

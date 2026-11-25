@@ -200,7 +200,6 @@ jobs:
             cuda-components:
               - '"cudart"'
               - '"nvcc"'
-              - '"nvml_dev"'
               - '"cublas"'
               - '"cublas_dev"'
               - '"crt"'
@@ -262,7 +261,7 @@ jobs:
             C:\Program Files\AMD\ROCm
             C:\VulkanSDK
             C:\Program Files\NVIDIA\CUDNN
-          key: ${{ matrix.install }}-${{ matrix.cudnn-install }}-${{ join(matrix.cuda-components, '-') }}
+          key: ${{ matrix.install }}-${{ matrix.cudnn-install }}
       - if: matrix.preset == 'CUDA' || matrix.preset == 'MLX CUDA 13'
         name: Install CUDA ${{ matrix.cuda-version }}
         run: |
@@ -338,7 +337,7 @@ jobs:
             C:\Program Files\AMD\ROCm
             C:\VulkanSDK
             C:\Program Files\NVIDIA\CUDNN
-          key: ${{ matrix.install }}-${{ matrix.cudnn-install }}-${{ join(matrix.cuda-components, '-') }}
+          key: ${{ matrix.install }}-${{ matrix.cudnn-install }}
       - uses: actions/checkout@v4
       - if: matrix.superbuild_target == 'ollama-local' || matrix.install-go
         uses: actions/setup-go@v5
